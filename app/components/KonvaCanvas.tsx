@@ -24,7 +24,7 @@ const KonvaCanvas = forwardRef<any, KonvaCanvasProps>(({ imageSrc, lineOrientati
       }
     },
     getStage: () => {
-      return ref.current;
+      return ref.current!;
     }
   }));
 

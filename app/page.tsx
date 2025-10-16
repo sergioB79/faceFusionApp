@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from 'react';
-
+import Image from 'next/image';
 import KonvaCanvas from './components/KonvaCanvas';
 
 export default function Home() {
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
         {generatedImage && (
           <div className="mt-4">
-            <img src={generatedImage} alt="Generated" className="max-w-full max-h-full" />
+            <Image src={generatedImage} alt="Generated" width={448} height={384} className="max-w-full max-h-full" />
           </div>
         )}
       </main>
