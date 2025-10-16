@@ -1,0 +1,1 @@
+Fix: Robust null check for Konva Stage ref

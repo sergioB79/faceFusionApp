@@ -24,8 +24,9 @@ const KonvaCanvas = forwardRef<any, KonvaCanvasProps>(({ imageSrc, lineOrientati
       }
     },
     getStage: () => {
-      if (ref.current) {
-        return ref.current;
+      const stage = ref.current;
+      if (stage) {
+        return stage;
       }
       throw new Error('Konva Stage ref is not available.');
     }
