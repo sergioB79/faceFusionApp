@@ -49,7 +49,7 @@ const KonvaCanvas = forwardRef<any, KonvaCanvasProps>(({ imageSrc, lineOrientati
   return (
     <Stage ref={ref} width={448} height={384}>
       <Layer>
-        {image && <Image image={image} width={448} height={384} />}
+        {image && <Image image={image} width={448} height={384} alt="User uploaded image" />}
         <Rect
           {...removedArea}
           fill="black"
